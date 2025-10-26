@@ -16,12 +16,42 @@ body{
     right: 0;
     background: rgba(0, 0, 0, 0.5);
 }
+
+.section-header .section-title{
+    font-size: 40px;
+}
+
+.line{
+    width: 150px;
+    background: #ddd;
+    height: 3px;
+    margin: auto;
+}
+
+.line span{
+    display: block;
+    width: 100px;
+    height: 4px;
+    background-color: #7cb62f;
+    margin: auto;
+    position: relative;
+    bottom: 0.5px;
+
+}
+
+.section-header p{
+    width: 50%;
+    color: #888;
+    margin: 20px auto;
+    line-height: 1.5;
+}
 /* Header */
 header{
     height: auto;
     padding: 10px 0;
-    border-bottom: 1px solid black;
-    position: relative;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
 }
 
 header i.icon{
@@ -34,6 +64,7 @@ header i.icon{
 
 header .logo h2{
     font-size: 35px;
+    color: #fff;
 }
 
 header nav .nav-list{
@@ -50,13 +81,24 @@ header nav .nav-list .list a{
     text-decoration: none;
     tansition: all 0.3s ease-in-out;
     text-aline: center;
+    color: #fff;
 }
 
 header nav .nav-list .list a:hover{
     color: #7cb62f; 
 }
 
+.sticky{
+    background: #000;
+    color: #7cb62f;
+}
+
 @media (max-width: 575px){
+
+    header{
+        background: #000;
+    }
+
     header nav .nav-list{
         display: none;
         text-align: center;
@@ -67,12 +109,16 @@ header nav .nav-list .list a:hover{
     }
     header i.icon{
         display: block;
+        color: #7cb62f;
+    }
+    .section-header p{
+        width: 85%;
     }
 }
 
 /* Home sections  */
 .home{
-    height: 500px;
+    height: 700px;
     background-image: url(./assets/images/background/Cellule.jpg);
     background-size: cover;
     background-position: center;
@@ -94,7 +140,7 @@ header nav .nav-list .list a:hover{
 
 .home .home-desc{
     color: #fff;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .home .button{
@@ -103,4 +149,105 @@ header nav .nav-list .list a:hover{
     width: 150px;
     text-align: center;
     padding: 10px 0;
+}
+
+@media(max-width: 575px){
+    .home .home-title{
+        font-size: 25px;
+
+    }
+    .home .button{
+        margin-bottom: 2px;
+    }
+}
+
+/* About Us  */
+
+.about .about-info h3{
+    font-size: 20px;
+    font-weight: normal;
+    margin-bottom: 20px;
+}
+
+.about .about-info h3 span{
+    color:#7cb62f;
+    
+}
+
+.about .about-info .about-info-desc{
+    line-height: 1.8;
+}
+
+.about .about-info .about-info-btn{
+    background-color: #7cb62f;
+    padding: 10px 20px;
+    color: #fff;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.about .about-img img{
+    width: 100%;
+
+}
+
+@media(max-width: 575px) {
+    .about .about-info h3{
+        font-size: 20px;
+    }
+}
+
+@media (min-width:576px) and (max-width: 768px) {
+    .about .about-info{
+        text-align: center;
+    }
+}
+
+@media (min-width: 990px){
+    .about .about-img img{
+        width: 80%;
+        height: 500px;
+    }
+}
+
+.services{
+    background: #f7f7f7;
+}
+
+.services .serv{
+    background: #fff;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.services .serv .icon{
+    background: #7cb62f;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+    color: #fff;
+    border-radius: 50%;
+}
+
+.sections .serv-title{
+    font-weight: bold;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.services .serv-desc{
+    font-size: 17px;
+    color: #888;
+    margin-bottom: 20px;
+}
+
+
+/* Pour dévéloppemebnt */
+.test{
+    margin-bottom: 400px;
+    color: #888;
+    margin-bottom: 20px;
+
 }
