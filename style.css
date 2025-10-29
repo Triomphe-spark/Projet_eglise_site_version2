@@ -45,6 +45,12 @@ body{
     margin: 20px auto;
     line-height: 1.5;
 }
+
+footer{
+    height: 300px;
+    width: 100%;
+    background: rgb(144, 81, 203);
+}
 /* Header */
 header{
     height: auto;
