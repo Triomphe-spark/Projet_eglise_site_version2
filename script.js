@@ -40,3 +40,6 @@ window.addEventListener('scroll', function() {
         header.classList.remove('sticky');
     }
 });
+
+// Année
+document.getElementById("year").textContent = new Date().getFullYear();

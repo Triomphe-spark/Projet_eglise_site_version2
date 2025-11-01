@@ -47,9 +47,10 @@ body{
 }
 
 footer{
-    height: 300px;
+    height: 100%;
     width: 100%;
-    background: rgb(144, 81, 203);
+    background: black;
+    color: #fff;
 }
 /* Header */
 header{
@@ -89,6 +90,11 @@ header nav .nav-list .list a{
     text-aline: center;
     color: #fff;
 }
+
+header nav .nav-list .list i{
+    margin: 5px;
+}
+
 
 header nav .nav-list .list a:hover{
     color: #7cb62f; 
@@ -249,11 +255,11 @@ header nav .nav-list .list a:hover{
     margin-bottom: 20px;
 }
 
+footer a{
+    text-decoration: none;
+    color: #fff;
+}
 
-/* Pour dévéloppemebnt */
-.test{
-    margin-bottom: 400px;
-    color: #888;
-    margin-bottom: 20px;
-
+footer li{
+    list-style: none;
 }
